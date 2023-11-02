@@ -4,7 +4,6 @@ function validar() {
         const { value: password } = await Swal.fire({
             title: '¡Departamento Restringido!',
             input: 'password',
-            buttonText:'Validar',
             inputLabel: '- Validar Permisos -',
             confirmButtonText:'Verificar',
             inputPlaceholder: 'Ingrese su contraseña',
@@ -25,7 +24,7 @@ function validar() {
                 title: 'Error de Autenticación',
                 text: '- Contraseña Incorrecta -',
                 showConfirmButton: false,
-                timer: 1700
+                timer: 1750
             })
         }
     })()
@@ -33,7 +32,7 @@ function validar() {
 function eliminarProducto(id) {
     Swal.fire({
         title: '¿Deseas Eliminar El Producto?',
-        text: "¡No podras revertir esa acción!",
+        text: "¡No podras revertir esta acción!",
         icon: 'warning',
         iconColor:'#E7590D90',
         showCancelButton: true,
@@ -53,7 +52,7 @@ function eliminarProducto(id) {
 function eliminarReporte(id) {
     Swal.fire({
         title: '¿Deseas Eliminar El Mensaje?',
-        text: "¡No podras revertir esa acción!",
+        text: "¡No podras revertir esta acción!",
         icon: 'warning',
         iconColor:'#E7590D90',
         showCancelButton: true,

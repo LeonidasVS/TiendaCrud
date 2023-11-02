@@ -30,10 +30,6 @@
                 class="bi bi-table"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="{% url 'crear_producto' %}">Crear Producto <i
-                class="bi bi-plus-circle"></i></a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link active" href="{% url 'Acerca_De_Nosotros' %}">Acerca De <i
                 class="bi bi-info-circle"></i></a>
           </li>
@@ -67,7 +63,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="{% static 'js/alerts.js' %}"></script>
 
-  
+
   {% if messages %}
   {% for m in messages %}
   <script>
@@ -77,7 +73,7 @@
       title: '{{m}}',
       showConfirmButton: false,
       timer: 1700,
-      iconColor:'#25C709',
+      iconColor: '#25C709',
       text: '¡EXITOSAMENTE!'
     })
 
@@ -86,4 +82,5 @@
   {% endif %}
 
 </body>
+
 </html>

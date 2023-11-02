@@ -54,7 +54,7 @@ def crearContacto(request):
     
     if reportes.is_valid():
         reportes.save()
-        messages.success(request,"Reporte Registrado")
+        messages.success(request,"Mensaje Registrado")
         return redirect('Contactanos')
     
     return render(request, 'producto/Contactanos.html', {'formulario':reportes})
